@@ -309,6 +309,17 @@ padding-bottom: 40px;
   margin-bottom:0; 
 }
 }
+@media screen and (max-width:430px){
+.circle{
+height: 320px;
+width: 320px;
+top: 340px;
+}
+.emoji{
+top: 300px;
+font-size: 100px;
+}
+}
 @media screen and (min-width:601px) and (max-width:900px) {
 .header{
 display: flex;
