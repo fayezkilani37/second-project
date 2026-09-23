@@ -275,8 +275,8 @@ font-size: 13px;
 }
 .circle{
 background-color: #0e0e12;
-height: 400px;
-width: 405px;
+aspect-ratio: 1 / 1;
+width: clamp(260px, 85%, 420px);
 position: absolute;
 top: 325px;
 left: 50%;
@@ -294,7 +294,7 @@ box-shadow: 0px 0px 350px 2px #7c3aed;
 position: absolute;
 top:325px;
 right: 30%;
-font-size: 130px;
+font-size: clamp(90px, 25vw, 130px);
 }
 .box-position{
 display: flex;
@@ -347,8 +347,8 @@ font-size: 13px;
 }
 .circle{
 background-color: #0e0e12;
-height: 490px;
-width: 490px;
+aspect-ratio: 1 / 1;
+width: clamp(420px, 62%, 490px);
 position: absolute;
 top: 270px;
 left: 50%;
