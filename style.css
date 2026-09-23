@@ -245,7 +245,7 @@ margin-top: 10px;
 }
 .container{
 width: 95%;
-height: 570px;
+height: 720px;
 display: flex;
 flex-direction: column;
 justify-content: start;
@@ -276,11 +276,11 @@ font-size: 13px;
 .circle{
 background-color: #0e0e12;
 aspect-ratio: 1 / 1;
-width: clamp(260px, 85%, 420px);
+width: 150%;
 position: absolute;
-top: 325px;
 left: 50%;
-transform: translateX(-50%);
+bottom: 0;
+transform: translate(-50%, 68%);
 border-radius: 100%;
 z-index: -1;
 background: linear-gradient(to left,#7c3aed,#ff5fa2);
@@ -292,9 +292,12 @@ box-shadow: 0px 0px 350px 2px #7c3aed;
 }
 .emoji{
 position: absolute;
-top:325px;
-right: 30%;
-font-size: clamp(90px, 25vw, 130px);
+top: auto;
+right: auto;
+left: 50%;
+bottom: 18%;
+transform: translateX(-50%);
+font-size: clamp(80px, 20vw, 120px);
 }
 .box-position{
 display: flex;
@@ -348,11 +351,11 @@ font-size: 13px;
 .circle{
 background-color: #0e0e12;
 aspect-ratio: 1 / 1;
-width: clamp(420px, 62%, 490px);
+width: 150%;
 position: absolute;
-top: 270px;
 left: 50%;
-transform: translateX(-50%);
+bottom: 0;
+transform: translate(-50%, 68%);
 border-radius: 100%;
 z-index: -1;
 background: linear-gradient(to left,#7c3aed,#ff5fa2);
@@ -364,8 +367,11 @@ box-shadow: 0px 0px 350px 2px #7c3aed;
 }
 .emoji{
 position: absolute;
-top: 345px;
-right:37%;
+top: auto;
+right: auto;
+left: 50%;
+bottom: 18%;
+transform: translateX(-50%);
 font-size: 130px;
 }
 .box-position{
