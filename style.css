@@ -42,7 +42,6 @@ nav{
 background: none;
 }
 .navv:hover{
-color: white;
 box-shadow: 3px 7px 20px 8px  rgba(124,58,237,0.5);
 translate: 0 -2px;
 }
@@ -96,7 +95,7 @@ color: white;
 font-size:45px;
 font-weight: 900;
 }
-.discription{
+.description{
 color: #b9b6c2;
 width: 50%;
 font-weight: 350;
@@ -105,6 +104,13 @@ margin-top: 15px;
 .rating{
 margin-top: 15px;
 color: #b9b6c2;
+}
+.highlight{
+color: #ff5fa2;
+}
+.stars{
+color: #ffc94a;
+padding: 0 5px;
 }
 .click{
 margin-top: 25px;
@@ -118,7 +124,6 @@ cursor: pointer;
 border: none;
 box-shadow: 1px 5px 20px 5px rgba(124,58,237,0.35);
 transition: 0.3s;
-z-index: 1;
 }
 .click:hover{
 box-shadow: 2px 8px 20px 5px rgba(124,58,237,0.45);
@@ -138,7 +143,6 @@ animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
 }
 .circle{
-background-color: #0e0e12;
 height: 600px;
 width: 600px;
 position: absolute;
@@ -204,7 +208,7 @@ rotate: -12deg;
 color: white;
 margin-top: 60px;
 }
-.feature-discription{
+.feature-description{
 color: #b9b6c2;
 font-size: 12px;
 margin-top: 10px;
@@ -230,12 +234,11 @@ font-size: 22px;
 @media screen and (max-width:600px)
 {
 .header{
-display: flex;
+height: auto;
+min-height: 120px;
 flex-direction: column;
-align-items: center;
 justify-content: center;
 gap: 5px;
-
 }
 nav{
 text-align: center;
@@ -255,14 +258,10 @@ width: 91.1vw;
 height: 137.5vw;
 padding: 0;
 border-radius: 6.5vw;
-display: flex;
 flex-direction: column;
 justify-content: start;
-align-items: center;
-position: relative;
 }
 .text{
-width: 100%;
 text-align: center;
 margin-top: 0;
 padding: 0;
@@ -280,7 +279,7 @@ font-weight: 700;
 line-height: 1.18;
 margin-top: 3.85vw;
 }
-.discription{
+.description{
 width: 100%;
 white-space: nowrap;
 margin-left: auto;
@@ -307,27 +306,18 @@ margin-top: 8.1vw;
 display: inline;
 }
 .circle{
-background-color: #0e0e12;
 aspect-ratio: 1 / 1;
 width: 94.6vw;
 height: auto;
-position: absolute;
 top: auto;
 right: auto;
 left: 50%;
 bottom: -46.3vw;
 transform: translateX(-50%);
-border-radius: 100%;
-z-index: -1;
 background: radial-gradient(circle at 29% 29%,#e657a7 0%,#d753b4 10%,#c34cad 27%,#ab47c5 45%,#9d43d6 55%,#8c3fe3 64%,#863de8 100%);
-animation-name: circle;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 3s;
 box-shadow: 0px 0px 350px 2px #7c3aed;
 }
 .emoji{
-position: absolute;
 top: auto;
 right: auto;
 left: 50%;
@@ -337,24 +327,18 @@ font-size: 26.8vw;
 line-height: 1;
 }
 .box-position{
-display: flex;
 flex-direction: column;
-justify-content: center;
-align-items: center;
 padding-bottom: 40px;
 }
 .box{
   width: 90%;  
-  display: flex;
   margin-bottom:0; 
 }
 }
 @media screen and (min-width:601px) and (max-width:900px) {
 .header{
-display: flex;
 flex-direction: column;
 justify-content: center;
-align-items: center;
 gap: 5px;
 }  
 nav{
@@ -364,11 +348,8 @@ text-align: center;
 width: 95%;
 height: auto;
 padding-bottom: 26.1vw;
-display: flex;
 flex-direction: column;
 justify-content: start;
-align-items: center;
-position: relative;
 }
 .text{
 text-align: center;
@@ -378,7 +359,7 @@ h2{
 font-size: 30px;
 
 }
-.discription{
+.description{
 font-size: 15px;
 width: 100%;
 }
@@ -392,27 +373,18 @@ height: 6vw;
 vertical-align: top;
 }
 .circle{
-background-color: #0e0e12;
 aspect-ratio: 1 / 1;
 width: 64.2vw;
 height: auto;
-position: absolute;
 top: auto;
 right: auto;
 left: 50%;
 bottom: -28vw;
 transform: translateX(-50%);
-border-radius: 100%;
-z-index: -1;
 background: radial-gradient(circle at 35% 30%,#f45b9b 0%,#d753b4 10%,#c34cad 27%,#ab47c5 45%,#9d43d6 55%,#8c3fe3 64%,#863de8 100%);
-animation-name: circle;
-animation-timing-function: ease-in-out;
-animation-iteration-count: infinite;
-animation-duration: 3s;
 box-shadow: 0px 0px 350px 2px #7c3aed;
 }
 .emoji{
-position: absolute;
 top: auto;
 right: auto;
 left: 50%;
@@ -423,8 +395,6 @@ line-height: 1;
 }
 .box-position{
 flex-direction: column;
-justify-content: center;
-align-items: center;
 padding-bottom: 40px;
 }
 .box{
@@ -433,16 +403,9 @@ margin-bottom:0;
 }
 }
 @media screen and (min-width:901px) and (max-width:950px){
-.discription{
-width: 40%;
-}
 .rating{
 font-size: 15px;
 }
-.emoji{
-position: absolute;
-right: 120px;
-} 
 h2{
 width: 350px;
 }
@@ -452,11 +415,10 @@ width: 350px;
 width: 92%;
 }    
 .box-position{
-display: flex;
 margin-right:40px;
 margin-left: 40px;
 }
-.discription{
+.description{
 width: 250px;
 
 }
@@ -467,7 +429,7 @@ right: 8%;
 }
 
 @media screen and (min-width:951px) and (max-width:1200px){
-.discription{
+.description{
 width: 40%;
 }
 }
