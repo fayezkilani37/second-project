@@ -267,7 +267,7 @@ font-size: 25px;
 .discription{
 width: 80%;
 font-size: 15px;
-margin: auto;
+margin-top: 15px;  
 }
 .rating{
 text-align: center;  
@@ -276,7 +276,7 @@ font-size: 13px;
 .circle{
 background-color: #0e0e12;
 height: 400px;
-width: 415px;
+width: 405px;
 position: absolute;
 top: 325px;
 left: 50%;
